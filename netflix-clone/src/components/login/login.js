@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 import logo from "../../assets/images/netflix-logo.png";
 import Button from "react-bootstrap/Button";
@@ -5,6 +6,12 @@ import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
 
 const Login = () => {
+  let navigate = useNavigate();
+
+  const submit = () => {
+    navigate("/profiles");
+  };
+
   return (
     <div className="login-container">
       <div className="login-logo">
@@ -34,7 +41,7 @@ const Login = () => {
             <Button
               className="login-input login-button"
               variant="primary"
-              type="submit"
+              onClick={submit}
             >
               Sign In
             </Button>
