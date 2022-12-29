@@ -26,6 +26,8 @@
   margin: 10px;
   margin-bottom: 0px;
   margin-top: 0px;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .profiles-name {

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./profiles.css";
 
 const Profiles = () => {
@@ -8,6 +9,12 @@ const Profiles = () => {
     { name: "David", picture: "profile3.png" },
     { name: "Mia", picture: "profile4.jpg" },
   ]);
+
+  let navigate = useNavigate();
+
+  const pushTo = () => {
+    navigate("/home");
+  };
 
   return (
     <div className="profiles-container">
@@ -22,6 +29,7 @@ const Profiles = () => {
                 className="profiles-image"
                 src={require(`../../assets/images/${prof.picture}`)}
                 alt="logo"
+                onClick={pushTo}
               />
               <a className="profiles-name">{prof.name}</a>
             </div>
