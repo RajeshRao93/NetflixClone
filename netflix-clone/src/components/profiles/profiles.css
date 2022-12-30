@@ -41,7 +41,7 @@
   color: white;
 }
 
-img:hover {
+.profiles-image:hover {
   border: 5px solid white;
 }
 

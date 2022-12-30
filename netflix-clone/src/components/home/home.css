@@ -1,22 +1,12 @@
-/* .home-container {
-  background-color: #141415;
-  background-blend-mode: hard-light;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  padding-top: 160px;
-  flex-direction: column;
-} */
-
 html {
   scroll-behavior: smooth;
+  color: white;
 }
 
 body {
   margin: 0;
   background-color: #141415;
+  max-height: 200vh;
 }
 
 .home-container {
@@ -37,6 +27,7 @@ body {
 .home-container section .item {
   padding: 0 2px;
   transition: 250ms all;
+  margin-left: 20px;
 }
 
 .home-container section .item:hover {
@@ -70,8 +61,13 @@ body {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
 
+.heading {
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 600px) {
-  a.arrow__btn {
+  a.navBtn {
     display: none;
   }
 }
